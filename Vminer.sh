@@ -7,9 +7,9 @@ wal='cat config.txt'
 echo "Please select an algorythm. [ x17 / scrypt ]"
 read -r algo
      if [ "$algo" == x17 ]; then
-     sudo ./cpuminer -a x17 -o stratum+tcp://xvg-x17.f2pool.com:9010 -u "$wal"
+     sudo /home/pi/cpuminer-multi/cpuminer -a x17 -o stratum+tcp://xvg-x17.f2pool.com:9010 -u "$wal"
      fi
 
      if [ "$algo" == scrypt ]; then
-     sudo ./cpuminer -a scrypt -o stratum+tcp://xvg-scrypt.f2pool.com:9010 -u "$wal"
+     sudo /home/pi/cpuminer-multi/cpuminer -a scrypt -o stratum+tcp://xvg-scrypt.f2pool.com:9010 -u "$wal"
      fi
