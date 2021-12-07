@@ -14,7 +14,7 @@ read -r wal
 echo "&wal" > config.txt 
 
 #Call back to confirm input
-wal='cat config.txt'
+wal='cat > config.txt'
 clear
 echo "Please confirm your wallet address bellow" && sleep 3
 echo "$wal" && sleep 5
