@@ -1,7 +1,11 @@
 #!/bin/bash
 
 #Call config.txt as a variable to use in executing command
-wal="home/pi/Deepmine/config.txt" 
+wal="home/pi/Deepmine/config.txt"
+while IFS= read -r line
+do
+  echo "$line"
+done < "$wal"
 
 #User input 
 echo "Please select an algorythm. [ x17 / scrypt ]"
