@@ -2,15 +2,16 @@
 
 #Interactive Installer
 
-#Create and go into Directiory then create configuration file
-mkdir DeepMine && cd DeepMine && touch config.txt
+#Create configuration file
+touch config.txt
 
 #User input
 echo "Please enter your Verge Wallet address" && sleep 1
 echo "It is very important that your wallet address is correct"
 echo "as an incorrect address can prevent the miner from starting."
-echo "When finished, hit ENTER then CTRL + d"
-cat > config.txt
+
+read -r wal 
+echo "&wal" > config.txt 
 
 #Call back to confirm input
 wal='cat config.txt'
