@@ -12,7 +12,7 @@ echo "It is very important that your wallet address is correct"
 echo "as an incorrect address can prevent the miner from starting."
 
 read -r wal 
-echo &wal > config.txt 
+sudo echo &wal > config.txt 
 
 #Call back to confirm input
 clear
