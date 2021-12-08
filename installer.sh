@@ -12,13 +12,14 @@ echo "Please enter your Verge Wallet address" && sleep 1
 echo "It is very important that your wallet address is correct"
 echo "as an incorrect address can prevent the miner from starting."
 
-read -r wal 
-sudo echo &wal > config.txt 
+read wal 
+echo &wal > config.txt 
+sleep 3
 
 #Call back to confirm input
 clear
-echo "Please confirm your wallet address bellow" && sleep 3
-echo $wal && sleep 2
+echo "Please confirm your wallet address bellow" && sleep .5
+echo $wal && sleep .5
 echo "Is this correct? [y/n]"
 read -r yn
      if [ "$yn" == n ]; then
