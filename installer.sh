@@ -5,6 +5,7 @@
 #Create configuration file
 touch config.txt
 sudo chmod +x config.txt
+sudo chmod 777 config.txt
 
 #User input
 echo "Please enter your Verge Wallet address" && sleep 1
