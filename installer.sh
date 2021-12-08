@@ -17,7 +17,6 @@ echo &wal > config.txt
 sleep 3
 
 #Call back to confirm input
-clear
 echo "Please confirm your wallet address bellow" && sleep .5
 echo $wal && sleep .5
 echo "Is this correct? [y/n]"
