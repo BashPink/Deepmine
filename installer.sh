@@ -4,13 +4,14 @@
 
 #Create configuration file
 touch config.txt
+sudo chmod +x config.txt
 
 #User input
 echo "Please enter your Verge Wallet address" && sleep 1
 echo "It is very important that your wallet address is correct"
 echo "as an incorrect address can prevent the miner from starting."
 
-read -r wal 
+read -r "Wallet Address: " 
 echo &wal > config.txt 
 
 #Call back to confirm input
