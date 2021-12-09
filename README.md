@@ -24,4 +24,5 @@ Then select an algorythm and your miner will start until you end it with CTRL + 
 # Supported algorythms
 
 x17 - Verge 
+
 scrypt - Verge
