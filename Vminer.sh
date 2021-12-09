@@ -11,5 +11,5 @@ read -r algo
      fi
 
      if [ "$algo" == scrypt ]; then
-     sudo /home/pi/cpuminer-multi/cpuminer -a scrypt -o stratum+tcp://xvg-scrypt.f2pool.com:9010 -u "$wal"
+     sudo /home/pi/cpuminer-multi/cpuminer -a scrypt -o stratum+tcp://xvg-scrypt.f2pool.com:9009 -u "$wal"
      fi
