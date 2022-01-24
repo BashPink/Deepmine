@@ -14,7 +14,8 @@ echo "as an incorrect address can prevent the miner from starting."
 
 read wal 
 echo $wal >> config.txt 
-sleep 3
+sleep 2
+clear
 
 #Call back to confirm input
 echo "Please confirm your wallet address bellow" && sleep .5
@@ -30,5 +31,6 @@ clear
 
 #Configure Files neatly into /home/user/Deepmine
 sudo rm -rf installer.sh 
+sudo rm -rf README.md
 
 exit 0
